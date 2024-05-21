@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- icon links 5.15 version -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- bootstrap links -->
+    <link rel="stylesheet" href="./libs/css/bootstrap.min.css" />
+    <title>TMozaika - Aloqa</title>
+    <!-- styles links main.css -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- styles medida.css links -->
+    <link rel="stylesheet" href="./css/media.css" />
+  </head>
+  <body>
+    <!-- SITE-HEADER-HERO -->
+    <div class="site-header-hero">
+      <header class="site-header">
+        <nav
+          class="navbar navbar-expand-lg bg-white navbar-light w-100 shadow-sm"
+          data-bs-theme="white"
+        >
+          <div class="container-fluid container-xxl">
+            <button
+              class="navbar-toggler ms-auto"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#burger"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse ps-4 pe-4" id="burger">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-sm-flex">
+                <li class="nav-item">
+                  <a class="nav-link nav-link__item" href="./index.html">Asosiy</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link__item" href="./contact.html">Aloqa</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-link__item" href="./reyting.html">Natijalar</a>
+                </li>
+              </ul>
+              <div class="btn-group">
+                <a
+                  href="#loginModal"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  >Kirish
+                </a>
+                <a
+                  href="#regModal"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  >Ro'yxatdan o'tish</a
+                >
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- REGISTER MODAL -->
+        <div
+          class="modal fade"
+          id="regModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">
+                  Ro'yxaytdan o'tish
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <form action="">
+                  <div class="mb-2">
+                    <label for="firstName" class="form-label">Ism</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="firstName"
+                      placeholder="ism..."
+                    />
+                  </div>
+                  <div class="mb-2">
+                    <label for="lastName" class="form-label">Famila</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="lastName"
+                      placeholder="familya..."
+                    />
+                  </div>
+                  <div class="mb-2">
+                    <label for="selectDegree" class="form-label"
+                      >Darajangiz</label
+                    >
+
+                    <select class="form-select" id="selectDegree">
+                      <option selected>Ilm dargohi</option>
+                      <option value="1">Oliy ta'lim</option>
+                      <option value="2">O'rta ta'lim</option>
+                      <option value="3">Maktab</option>
+                    </select>
+                  </div>
+                  <div class="mb-2">
+                    <label for="phoneNumber" class="form-label"
+                      >Telefon raqam</label
+                    >
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="phoneNumber"
+                      placeholder="telefon raqam..."
+                    />
+                  </div>
+                  <div class="mb-2 input-pasword">
+                    <label for="password" class="form-label">Parol</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="password"
+                      placeholder="telefon raqam..."
+                    />
+                    <span
+                      class="toggle-password"
+                      onclick="togglePasswordVisibility()"
+                      >👁️</span
+                    >
+                  </div>
+                  <div class="mb-2 input-pasword">
+                    <label for="password" class="form-label">Parol qayta</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="password"
+                      placeholder="qayta raqam..."
+                    />
+                    <span
+                      class="toggle-password"
+                      onclick="togglePasswordVisibility()"
+                      >👁️</span
+                    >
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Saqlash</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- REGISTER MODAL -->
+        <!-- LOGIN MODAL -->
+        <div
+          class="modal fade"
+          id="loginModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Kirish</h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <form action="">
+                  <div class="mb-2">
+                    <label for="phoneNumber" class="form-label"
+                      >Telefon raqam</label
+                    >
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="phoneNumber"
+                      placeholder="telefon raqam..."
+                    />
+                  </div>
+                  <div class="mb-2 input-pasword">
+                    <label for="password" class="form-label">Parol</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="password"
+                      placeholder="telefon raqam..."
+                    />
+                    <span
+                      class="toggle-password"
+                      onclick="togglePasswordVisibility()"
+                      >👁️</span
+                    >
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Kirish</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- LOGIN MODAL -->
+      </header>
+
+      <div class="site-hero">
+        <div class="site-hero__content">
+          <div class="container">
+            <h1 class="site-hero__title">
+                Savollaringiz bo’lsa murojaat qiling
+            </h1>
+            <p class="site-hero__desc">
+              O‘zingizning kreativ fikrlash, bilimlarni hayotga bog‘lay olish
+              ko‘nikmalaringizni biz bilan rivojlantiring
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- SITE-HEADER-HERO -->
+
+    <!-- CONTACT SECTION -->
+    <div class="contact py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-4 mb-3">
+                    <div class="contact-item">
+                      <img src="./img/phone icon.svg" alt="Call icon">
+                      <h4 class="contact-title">Telefon</h4>
+                      <a href="tel:998978665050" class="contact-link">(998) 97 866 50 50</a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 mb-3">
+                    <div class="contact-item">
+                      <img src="./img/mail icon.svg" alt="Email icon">
+                      <h4 class="contact-title">Elektron pochta</h4>
+                      <a href="mailto:itlive@mail.ru" class="contact-link">itlive@mail.ru</a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 mb-3">
+                    <div class="contact-item">
+                      <img src="./img/location icon.svg" alt="Location icon">
+                      <h4 class="contact-title">Manzil</h4>
+                      <a href="" class="contact-link">Guliston sh,IT LIVE ACADEMY</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-3">  
+                <div class="col-12">
+                  <div class="contact-form d-flex justify-content-center">
+                    <div class="col-10 col-lg-6">
+                      <h2 class="contact-headline text-center my-3">Savollaringiz bo’lsa murojaat qiling</h2>
+                      <form action="#!" method="POST">
+                        <div class="mb-3">
+                          <label for="name" class="form-label">F.I.O</label>
+                          <input type="text" class="form-control" id="name" placeholder="Kiriting">
+                        </div>
+                        <div class="mb-3">
+                          <label for="phone" class="form-label">Telefon raqamingiz</label>
+                          <input type="number" class="form-control" id="phone" placeholder="+998">
+                        </div>
+                        <div class="mb-3">
+                          <label for="message" class="form-label">Xabar</label>
+                          <textarea class="form-control" id="message" rows="4"></textarea>
+                        </div>
+                        <div class="mb-3">
+                      
+                         <button type="submit" class="btn btn-primary">Yuborish</button>
+                        </div>
+                      </form>
+                    </div>
+                </div>
+             </div>
+            </div>
+        </div>
+    </div>
+    <!-- CONTACT SECTION -->
+
+     <!-- SITE-FOOTER -->
+     <footer class="site-footer  py-3">
+      <div class="container px-4">
+          <div class="row justify-content-between">
+              <div class="col-6 col-md-3 mb-2">
+                  <div class="footer-mail text-center">
+                      <i class="fal fa-envelope footer-mail__icon"></i>
+                      <a href="mailto:itlive@mail.ru" class="footer-mail__link">itlive@mail.ru</a>
+                  </div>
+              </div>
+              <div class="col-6 col-md-3 mb-2">
+                  <div class="footer-phone text-end">
+                      <i class="fal fa-phone-alt footer-phone__icon"></i>
+                      <a href="tel:998978665050" class="footer-phone__link">(97) 866-50-50</a>
+                  </div>
+              </div>
+              <div class="col-6 col-md-3 mb-2 ">
+                  <ul class="footer-social social d-flex justify-content-start justify-content-lg-end">
+                     <li class="social-item">
+                      <a href="#!" class="social-link">
+                          <i class="fab fa-facebook-f  social-icon"></i>
+                      </a>
+                     </li>
+                     <li class="social-item">
+                      <a href="#!" class="social-link">
+                          <i class="fab fa-instagram  social-icon"></i>
+                      </a>
+                     </li>
+                     <li class="social-item">
+                      <a href="#!" class="social-link">
+                          <i class="fab fa-telegram  social-icon"></i>
+                      </a>
+                     </li>
+                     <li class="social-item">
+                      <a href="#!" class="social-link">
+                          <i class="fab fa-youtube  social-icon"></i>
+                      </a>
+                     </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      </footer>
+  <!-- SITE-FOOTER -->
+
+    <!-- bootstrap script links -->
+    <script src="./libs/js/bootstrap.bundle.min.js"></script>
+    <!-- main.js file links -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
