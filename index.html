@@ -35,7 +35,7 @@
             >
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse ps-4 pe-4" id="burger">
+            <div class="collapse navbar-collapse ps-4 pe-4 align-items-center" id="burger">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-sm-flex">
                 <li class="nav-item">
                   <a class="nav-link nav-link__item" href="./index.html">Asosiy</a>
@@ -50,7 +50,7 @@
                   <a class="nav-link nav-link__item" href="./reyting.html">Natijalar</a>
                 </li>
               </ul>
-              <div class="btn-group">
+              <div class="btn-group me-2">
                 <a
                   href="#loginModal"
                   class="btn btn-primary"
@@ -64,6 +64,29 @@
                   >Ro'yxatdan o'tish</a
                 >
               </div>
+              <!-- USER PROFILE -->
+              <div class="nav-ava ">
+                <div class="block-time">
+                  <i class="fas fa-clock clock-icon"></i>  
+                  <b class="bold">59</b>
+                </div>
+                <p class="nav-key">
+                  <i class="fas fa-key key-icon"></i>
+                  <span class="key-num">0</span>
+                </p>
+                <div class="dropdown">
+                  <button class="nav-ava__content" data-bs-toggle="dropdown" data-bs-target="#profile">
+                    <p class="user-name">Abdulla</p>
+                    <img src="https://picsum.photos/40/40" alt="User image" class="user-image">
+                  </button>
+                  <ul class="dropdown-menu" id="profile">
+                    <li><a href="./index.html" class="dropdown-item" href="#">Profil</a></li>
+                    <li><a href="./index.html" class="dropdown-item" href="#">Chiqish</a></li>
+                  
+                  </ul>
+                </div>
+              </div>
+               <!-- USER PROFILE -->
             </div>
           </div>
         </nav>
