@@ -42,6 +42,11 @@ body {
     letter-spacing: .5px;
     line-height: 27px;
 }
+.navbar-brend {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--gray);
+}
 /* SITE-HEADER */
 
 /* SITE-HERO */
