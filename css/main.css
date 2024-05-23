@@ -100,10 +100,10 @@ body {
 }
 .site-hero__title {
     text-align: center;
-    font-size: 42px;
+    font-size: 40px;
     font-weight: 900;
     letter-spacing: 0.2px;
-    line-height: 65.5px; 
+    line-height: 56px; 
     color: var(--white);
 }
 .site-hero__desc {
