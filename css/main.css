@@ -244,7 +244,49 @@ body {
 .about {
     background-color: #F7F7F8;
 }
+.about-desc {
+    font-size: 15px;
+    color: #1A1C2C;
+    font-weight: 400;
+    line-height: 30px;
+}
 /* ABOUT PAGE */
+
+/* QUESTION PAGE */
+.question {
+    background-color: #F7F7F8;
+}
+.question-test {
+    font-size: 18px;
+    font-weight: 700;
+}
+.question-content {
+    background-color: var(--white);
+  
+    overflow: hidden;
+    padding: 20px;
+    height: 100%;
+}
+
+.question-form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.form-check-label {
+    font-size: 14px;
+}
+.key-icon {
+   margin-left: 10px;
+   color: #1D4ED6;
+}
+.clock-icon {
+    color: #1D4ED6;
+}
+.modal-footer {
+    justify-content: center !important;
+}
+/* QUESTION PAGE */
 
 
 /* SITE-FOOTER */
