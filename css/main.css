@@ -262,10 +262,9 @@ body {
 }
 .question-content {
     background-color: var(--white);
-  
     overflow: hidden;
     padding: 20px;
-    height: 100%;
+   
 }
 
 .question-form {
@@ -285,6 +284,39 @@ body {
 }
 .modal-footer {
     justify-content: center !important;
+}
+.question-photo {
+    width: 100%;
+}
+.question-help {
+    font-size: 14px;
+    font-weight: 400;
+    color: #1A1C2C;
+}
+.question-item {
+    font-size: 16px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.question-word {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1D4ED6;
+}
+.form-check {
+    display: flex;
+    column-gap: 10px;
+    padding-left: 0;
+}
+.input-word {
+    width: 40px !important;
+    height: 40px !important;
+    background-color: #C5C5C5;
+    text-transform: uppercase;
+}
+.input-word:focus {
+    box-shadow: unset;
 }
 /* QUESTION PAGE */
 
